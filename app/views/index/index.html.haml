@@ -1,1 +1,5 @@
-hi
+%h2 Scores
+%dl
+- @scores.each do |player_id,s|
+  %dt= Player.find(player_id).name
+  %dd= s
