@@ -2,7 +2,7 @@ require 'thebet'
 
 class IndexController < ApplicationController
   def index
-    score = Score.new 2010
+    score = Score.new 2011
     records = score.get_records
 
     @scores = {}
