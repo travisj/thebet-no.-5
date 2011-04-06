@@ -2,6 +2,7 @@ require 'thebet'
 
 class IndexController < ApplicationController
   def index
+    response.headers['Cache-Control'] = 'public, max-age=3600'
     score = Score.new 2011
     records = score.get_records
 
